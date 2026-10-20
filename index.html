@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -21,14 +21,16 @@
       <nav>
         <a href="#coffee">Coffee Menu</a>
         <a href="#cakes">Cakes & Pastries</a>
+        <a href="#gallery">Atmosphere</a>
         <a href="#custom">Drink Finder</a>
         <a href="#hours">Hours</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Background Image -->
   <section class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
       <span class="tagline">Viennese Heritage & Modern Chic</span>
       <h1>Artisanal Coffee & Exquisite Pastries</h1>
@@ -50,7 +52,7 @@
     </div>
   </section>
 
-  <!-- Cakes & Pastries Section -->
+  <!-- Cakes & Pastries Section with High-Res Food Imagery -->
   <section id="cakes" class="section section-alt">
     <div class="container">
       <div class="section-header">
@@ -60,36 +62,80 @@
 
       <div class="cakes-grid">
         <article class="cake-card">
-          <div class="cake-badge">Classic</div>
-          <h3>Original Sachertorte</h3>
-          <p class="price">€5.40</p>
-          <p class="desc">Traditional rich chocolate cake with apricot jam layering, served with unsweetened whipped cream.</p>
+          <div class="cake-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Original Sachertorte">
+            <span class="cake-badge">Classic</span>
+          </div>
+          <div class="cake-info">
+            <h3>Original Sachertorte</h3>
+            <p class="price">€5.40</p>
+            <p class="desc">Traditional rich chocolate cake with apricot jam layering, served with unsweetened whipped cream.</p>
+          </div>
         </article>
 
         <article class="cake-card">
-          <div class="cake-badge">House Favorite</div>
-          <h3>Cherry Kiss Tart</h3>
-          <p class="price">€4.80</p>
-          <p class="desc">Crisp shortcrust tart filled with dark cherry compote and velvety vanilla bean custard.</p>
+          <div class="cake-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=600&q=80" alt="Cherry Kiss Tart">
+            <span class="cake-badge">House Favorite</span>
+          </div>
+          <div class="cake-info">
+            <h3>Cherry Kiss Tart</h3>
+            <p class="price">€4.80</p>
+            <p class="desc">Crisp shortcrust tart filled with dark cherry compote and velvety vanilla bean custard.</p>
+          </div>
         </article>
 
         <article class="cake-card">
-          <h3>Vanilla Bean Cheesecake</h3>
-          <p class="price">€5.20</p>
-          <p class="desc">Creamy Basque-style cheesecake infused with Bourbon vanilla and topped with fresh raspberries.</p>
+          <div class="cake-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=600&q=80" alt="Vanilla Bean Cheesecake">
+          </div>
+          <div class="cake-info">
+            <h3>Vanilla Bean Cheesecake</h3>
+            <p class="price">€5.20</p>
+            <p class="desc">Creamy Basque-style cheesecake infused with Bourbon vanilla and topped with fresh raspberries.</p>
+          </div>
         </article>
 
         <article class="cake-card">
-          <h3>Spiced Carrot Cake</h3>
-          <p class="price">€4.60</p>
-          <p class="desc">Moist organic carrot cake layered with cream cheese frosting and caramelized walnuts.</p>
+          <div class="cake-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=600&q=80" alt="Spiced Carrot Cake">
+          </div>
+          <div class="cake-info">
+            <h3>Spiced Carrot Cake</h3>
+            <p class="price">€4.60</p>
+            <p class="desc">Moist organic carrot cake layered with cream cheese frosting and caramelized walnuts.</p>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
+  <!-- Chic Gallery Section -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Mimi Ambiance</h2>
+        <p>A glimpse into our Viennese sanctuary of taste and aesthetics.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80" alt="Café Interior">
+          <div class="gallery-caption">Warm Elegance</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80" alt="Artisanal Espresso">
+          <div class="gallery-caption">Artisanal Roast</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Fresh Pastries">
+          <div class="gallery-caption">Daily Baking</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Interactive Gadget: Dream Drink Finder -->
-  <section id="custom" class="section">
+  <section id="custom" class="section section-alt">
     <div class="container">
       <div class="gadget-box">
         <h2>✨ Custom Dream Drink Finder</h2>
