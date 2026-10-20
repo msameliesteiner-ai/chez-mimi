@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7a8c4">
+  <title>Chez Mimi – Café in Vienna</title>
+  <meta name="description" content="Chez Mimi – your little café in Vienna. Discover our coffee specialties, layer by layer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,600..800;1,9..144,600..800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Icon sprite (reused everywhere with <use>) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="heart" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 21.2C5.5 16.8 2 13.2 2 9.2 2 6.4 4.1 4.5 6.6 4.5c1.9 0 3.7 1 5.4 3.1 1.7-2.1 3.5-3.1 5.4-3.1C19.9 4.5 22 6.4 22 9.2c0 4-3.5 7.6-10 12z"/>
+      </symbol>
+      <symbol id="bean" viewBox="0 0 24 24">
+        <g transform="rotate(35 12 12)">
+          <ellipse cx="12" cy="12" rx="6.5" ry="10" fill="currentColor"/>
+          <path d="M12 2.6C7.5 8 16.5 16 12 21.4" fill="none" stroke="var(--crease, #fde4ec)" stroke-width="1.8" stroke-linecap="round"/>
+        </g>
+      </symbol>
+      <symbol id="sparkle" viewBox="-12 -12 24 24">
+        <path fill="currentColor" d="M0 -11 Q1.5 -1.5 11 0 Q1.5 1.5 0 11 Q-1.5 1.5 -11 0 Q-1.5 -1.5 0 -11Z"/>
+      </symbol>
+      <symbol id="pin" viewBox="0 0 24 24">
+        <path fill="currentColor" fill-rule="evenodd" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zM12 11.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+      </symbol>
+      <symbol id="clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+        <path d="M12 6.5V12l4 2.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="mail" viewBox="0 0 24 24">
+        <rect x="2.5" y="5" width="19" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2.4"/>
+        <path d="M3.5 7.5l8.5 6 8.5-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="cake" viewBox="0 0 24 24">
+        <path fill="currentColor" fill-opacity=".55" d="M5 12h14l-1.8 9H6.8z"/>
+        <path fill="currentColor" d="M4 12c0-4 3.4-7 8-7s8 3 8 7z"/>
+        <circle cx="12" cy="3.6" r="2" fill="currentColor"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#top" class="brand" aria-label="Chez Mimi – home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M31 17h3q5 0 5 5t-5 5h-3" fill="none" stroke="#6b1230" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M5 14h26v8q0 12-13 12T5 22z" fill="#fffafc" stroke="#6b1230" stroke-width="2.6" stroke-linejoin="round"/>
+        <use href="#heart" x="11" y="18" width="14" height="14" color="#d9264a"/>
+        <path d="M13 9q-2-3 0-6M20 9q-2-3 0-6" fill="none" stroke="#d9264a" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span>Chez Mimi</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#menu">Coffee Menu</a>
+      <a href="#about">About Us</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="awning" aria-hidden="true"></div>
+
+    <div class="confetti" aria-hidden="true">
+      <svg class="float" style="left:4%;top:30%;width:46px;color:#6b1230;--crease:#f7a8c4;--r:-20deg;animation-delay:-1s"><use href="#bean"/></svg>
+      <svg class="float" style="left:44%;top:16%;width:30px;color:#d9264a;--r:10deg;animation-delay:-3s"><use href="#heart"/></svg>
+      <svg class="float" style="left:8%;top:74%;width:34px;color:#fde4ec;--r:-8deg;animation-delay:-2s"><use href="#heart"/></svg>
+      <svg class="float" style="left:48%;top:80%;width:42px;color:#d9264a;--crease:#fde4ec;--r:30deg;animation-delay:-4s"><use href="#bean"/></svg>
+      <svg class="float" style="left:92%;top:20%;width:40px;color:#6b1230;--crease:#f7a8c4;--r:15deg;animation-delay:-5s"><use href="#bean"/></svg>
+      <svg class="float" style="left:90%;top:76%;width:28px;color:#6b1230;--r:-12deg;animation-delay:-2.5s"><use href="#heart"/></svg>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="kicker">Café · Vienna · Est. 2026</p>
+        <h1 class="wordmark">Chez Mimi</h1>
+        <p class="claim">Coffee, layer by layer.</p>
+        <p class="sub">A tiny, pink corner of Vienna where every cup is a little work of art – and you can peek inside before you order.</p>
+        <div class="btn-row">
+          <a class="btn" href="#menu">Peek inside our cups</a>
+          <a class="btn btn--light" href="#visit">Find us</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <svg class="hero-cup" viewBox="0 0 420 360" role="img" aria-label="Illustration of a cup of coffee with a heart in the foam">
+          <defs>
+            <clipPath id="heroClip"><path d="M82 150 H318 V215 Q318 318 200 318 Q82 318 82 215 Z"/></clipPath>
+          </defs>
+          <!-- steam -->
+          <g class="steam steam--big" fill="none" stroke="#6b1230" stroke-width="6" stroke-linecap="round">
+            <path d="M150 112 q-16 -22 0 -44 q16 -22 0 -44"/>
+            <path d="M210 112 q-16 -22 0 -44 q16 -22 0 -44"/>
+            <path d="M270 112 q-16 -22 0 -44 q16 -22 0 -44"/>
+          </g>
+          <!-- sparkles -->
+          <use class="twinkle" href="#sparkle" x="18" y="130" width="40" height="40" color="#d9264a"/>
+          <use class="twinkle t2" href="#sparkle" x="352" y="60" width="34" height="34" color="#6b1230"/>
+          <use class="twinkle t3" href="#sparkle" x="372" y="300" width="28" height="28" color="#fde4ec"/>
+          <!-- saucer -->
+          <ellipse cx="200" cy="320" rx="180" ry="30" fill="#fffafc" stroke="#6b1230" stroke-width="5"/>
+          <ellipse cx="200" cy="320" rx="130" ry="16" fill="#fde4ec"/>
+          <!-- handle -->
+          <path d="M316 178 H342 Q390 178 390 225 Q390 270 338 270 H312" fill="none" stroke="#6b1230" stroke-width="22" stroke-linecap="round"/>
+          <path d="M316 178 H342 Q390 178 390 225 Q390 270 338 270 H312" fill="none" stroke="#fffafc" stroke-width="10" stroke-linecap="round"/>
+          <!-- cup body -->
+          <path d="M82 150 H318 V215 Q318 318 200 318 Q82 318 82 215 Z" fill="#fffafc" stroke="#6b1230" stroke-width="5" stroke-linejoin="round"/>
+          <g clip-path="url(#heroClip)">
+            <rect x="80" y="262" width="240" height="14" fill="#f7a8c4"/>
+            <rect x="80" y="282" width="240" height="8" fill="#fde4ec"/>
+          </g>
+          <use href="#heart" x="164" y="196" width="72" height="72" color="#d9264a"/>
+          <use href="#heart" x="104" y="214" width="28" height="28" color="#f7a8c4"/>
+          <use href="#heart" x="268" y="214" width="28" height="28" color="#f7a8c4"/>
+          <!-- coffee surface -->
+          <ellipse cx="200" cy="150" rx="118" ry="26" fill="#fffafc" stroke="#6b1230" stroke-width="5"/>
+          <ellipse cx="200" cy="153" rx="103" ry="19" fill="#7a3f26"/>
+          <ellipse cx="200" cy="154" rx="92" ry="14" fill="#b5754a"/>
+          <g transform="translate(200 153) scale(1 .62)">
+            <use href="#heart" x="-24" y="-24" width="48" height="48" color="#fde4ec"/>
+          </g>
+        </svg>
+
+        <svg class="badge" viewBox="0 0 160 160" aria-hidden="true">
+          <defs><path id="circ" d="M80 80 m-58 0 a58 58 0 1 1 116 0 a58 58 0 1 1 -116 0"/></defs>
+          <circle cx="80" cy="80" r="76" fill="#d9264a" stroke="#6b1230" stroke-width="4"/>
+          <text font-family="DM Sans, sans-serif" font-weight="700" font-size="13" fill="#fde4ec">
+            <textPath href="#circ" textLength="352" lengthAdjust="spacing">FRESHLY ROASTED · MADE WITH LOVE · </textPath>
+          </text>
+          <use href="#heart" x="50" y="50" width="60" height="60" color="#fde4ec"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" style="--from:var(--pink);--to:var(--red)" aria-hidden="true"><path d="M0 35 C120 70 240 0 360 35 S600 70 720 35 S960 0 1080 35 S1320 70 1440 35 V70 H0Z"/></svg>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true"><div class="track" id="marqueeTrack"></div></div>
+
+  <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" style="--from:var(--red);--to:var(--light)" aria-hidden="true"><path d="M0 35 C120 0 240 70 360 35 S600 0 720 35 S960 70 1080 35 S1320 0 1440 35 V70 H0Z"/></svg>
+
+  <!-- MENU -->
+  <section id="menu" class="section section--light">
+    <div class="wrap">
+      <h2 class="section-title">Our Coffee Menu</h2>
+      <svg class="squiggle" viewBox="0 0 120 12" aria-hidden="true"><path d="M2 6 Q12 -2 22 6 T42 6 T62 6 T82 6 T102 6 T118 6" fill="none" stroke="#d9264a" stroke-width="3" stroke-linecap="round"/></svg>
+      <p class="intro">See what every cup looks like from the inside – from a bold espresso to a classic Viennese Melange. <strong>Tip:</strong> hover (or tap) a layer name to spotlight it!</p>
+
+      <div class="grid" id="drinks"></div>
+
+      <div class="loyalty">
+        <div class="loyalty-text">
+          <h3>Mimi's Loyalty Card</h3>
+          <p>Collect 9 hearts and your 10th coffee is on us. Go on, tap to stamp!</p>
+          <p class="stamp-msg" id="stampMsg" aria-live="polite">0 / 9 hearts collected</p>
+        </div>
+        <div class="stamps" id="stamps"></div>
+        <button class="btn btn--small" id="resetStamps" type="button">Start over</button>
+      </div>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" style="--from:var(--light);--to:var(--burgundy)" aria-hidden="true"><path d="M0 35 C120 70 240 0 360 35 S600 70 720 35 S960 0 1080 35 S1320 70 1440 35 V70 H0Z"/></svg>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section--dark">
+    <div class="confetti" aria-hidden="true">
+      <svg class="float" style="left:6%;top:12%;width:40px;color:#f7a8c4;--crease:#6b1230;--r:-15deg"><use href="#bean"/></svg>
+      <svg class="float" style="left:90%;top:20%;width:30px;color:#d9264a;--r:12deg;animation-delay:-2s"><use href="#heart"/></svg>
+      <svg class="float" style="left:84%;top:80%;width:44px;color:#f7a8c4;--crease:#6b1230;--r:28deg;animation-delay:-4s"><use href="#bean"/></svg>
+      <svg class="float" style="left:10%;top:84%;width:28px;color:#fde4ec;--r:-10deg;animation-delay:-1s"><use href="#heart"/></svg>
+    </div>
+    <div class="wrap">
+      <h2 class="section-title">About Us</h2>
+      <svg class="squiggle" viewBox="0 0 120 12" aria-hidden="true"><path d="M2 6 Q12 -2 22 6 T42 6 T62 6 T82 6 T102 6 T118 6" fill="none" stroke="#f7a8c4" stroke-width="3" stroke-linecap="round"/></svg>
+      <p class="about-text">
+        Chez Mimi is a small café in the heart of Vienna. We roast our beans
+        with care, bake fresh cake every day and take the time for what makes
+        a good coffee house: a cozy spot where you want to stay a while.
+      </p>
+      <div class="features">
+        <article class="feature">
+          <div class="feature-icon"><svg><use href="#bean"/></svg></div>
+          <h3>Roasted with care</h3>
+          <p>Small batches, big flavour. Our beans are roasted fresh every week.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon"><svg><use href="#cake"/></svg></div>
+          <h3>Baked every day</h3>
+          <p>Cakes, tarts and flaky pastries – still warm when they reach your table.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon"><svg><use href="#heart"/></svg></div>
+          <h3>A cozy corner</h3>
+          <p>Soft chairs, good music and nobody rushing you. Stay as long as you like.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" style="--from:var(--burgundy);--to:var(--pink)" aria-hidden="true"><path d="M0 35 C120 0 240 70 360 35 S600 0 720 35 S960 70 1080 35 S1320 0 1440 35 V70 H0Z"/></svg>
+
+  <!-- VISIT -->
+  <section id="visit" class="section section--pink">
+    <div class="wrap">
+      <h2 class="section-title">Visit Us</h2>
+      <svg class="squiggle" viewBox="0 0 120 12" aria-hidden="true"><path d="M2 6 Q12 -2 22 6 T42 6 T62 6 T82 6 T102 6 T118 6" fill="none" stroke="#d9264a" stroke-width="3" stroke-linecap="round"/></svg>
+      <div class="visit-grid">
+        <article class="visit-card">
+          <div class="visit-icon"><svg><use href="#pin"/></svg></div>
+          <h3>Address</h3>
+          <p>Chez Mimi<br>Schleifmühlgasse 12<br>1040 Vienna, Austria</p>
+          <p><a class="link" href="https://www.google.com/maps/search/?api=1&query=Schleifmühlgasse+12+1040+Wien" target="_blank" rel="noopener">View on map →</a></p>
+        </article>
+        <article class="visit-card">
+          <div class="visit-icon"><svg><use href="#clock"/></svg></div>
+          <h3>Opening Hours</h3>
+          <ul class="hours">
+            <li><span>Mon – Fri</span><span>7:30 am – 7:00 pm</span></li>
+            <li><span>Saturday</span><span>8:30 am – 7:00 pm</span></li>
+            <li><span>Sunday</span><span>9:00 am – 5:00 pm</span></li>
+          </ul>
+        </article>
+        <article class="visit-card">
+          <div class="visit-icon"><svg><use href="#mail"/></svg></div>
+          <h3>Say Hello</h3>
+          <p>Phone: +43 1 234 56 78<br>hello@chezmimi.example</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" style="--from:var(--pink);--to:var(--burgundy)" aria-hidden="true"><path d="M0 35 C120 70 240 0 360 35 S600 70 720 35 S960 0 1080 35 S1320 70 1440 35 V70 H0Z"/></svg>
+
+  <footer>
+    <p class="foot-logo">Chez Mimi</p>
+    <p>Schleifmühlgasse 12 · 1040 Vienna</p>
+    <p class="small">© 2026 Chez Mimi · Vienna · School project, fictional café</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
