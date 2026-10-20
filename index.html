@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chez Mimi — Artisanal Café & Bakery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">Chez Mimi</span>
+      </div>
+      <nav>
+        <a href="#coffee">Coffee Menu</a>
+        <a href="#cakes">Cakes & Pastries</a>
+        <a href="#custom">Drink Finder</a>
+        <a href="#hours">Hours</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="tagline">Viennese Heritage & Modern Chic</span>
+      <h1>Artisanal Coffee & Exquisite Pastries</h1>
+      <p>Experience layer-perfected coffees, handcrafted desserts, and a charming burgundy ambiance.</p>
+      <a href="#coffee" class="btn-primary">Explore Our Menu</a>
+    </div>
+  </section>
+
+  <!-- Coffee Menu Section -->
+  <section id="coffee" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Layered Coffees</h2>
+        <p>Each cup is crafted with precision, layered with care, and served with Viennese passion.</p>
+      </div>
+
+      <!-- Dynamic drinks container rendered by script.js -->
+      <div id="drinks" class="drinks-grid"></div>
+    </div>
+  </section>
+
+  <!-- Cakes & Pastries Section -->
+  <section id="cakes" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Cakes & Sweet Creations</h2>
+        <p>Freshly baked every morning in our Viennese patisserie.</p>
+      </div>
+
+      <div class="cakes-grid">
+        <article class="cake-card">
+          <div class="cake-badge">Classic</div>
+          <h3>Original Sachertorte</h3>
+          <p class="price">€5.40</p>
+          <p class="desc">Traditional rich chocolate cake with apricot jam layering, served with unsweetened whipped cream.</p>
+        </article>
+
+        <article class="cake-card">
+          <div class="cake-badge">House Favorite</div>
+          <h3>Cherry Kiss Tart</h3>
+          <p class="price">€4.80</p>
+          <p class="desc">Crisp shortcrust tart filled with dark cherry compote and velvety vanilla bean custard.</p>
+        </article>
+
+        <article class="cake-card">
+          <h3>Vanilla Bean Cheesecake</h3>
+          <p class="price">€5.20</p>
+          <p class="desc">Creamy Basque-style cheesecake infused with Bourbon vanilla and topped with fresh raspberries.</p>
+        </article>
+
+        <article class="cake-card">
+          <h3>Spiced Carrot Cake</h3>
+          <p class="price">€4.60</p>
+          <p class="desc">Moist organic carrot cake layered with cream cheese frosting and caramelized walnuts.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Gadget: Dream Drink Finder -->
+  <section id="custom" class="section">
+    <div class="container">
+      <div class="gadget-box">
+        <h2>✨ Custom Dream Drink Finder</h2>
+        <p>Not sure what to order? Pick your preference and let Chez Mimi curate your drink!</p>
+        
+        <div class="gadget-controls">
+          <div class="control-group">
+            <label for="moodSelect">Your Current Mood:</label>
+            <select id="moodSelect">
+              <option value="cozy">Cozy & Relaxed</option>
+              <option value="energetic">Strong & Focused</option>
+              <option value="sweet">Sweet & Indulgent</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <label for="milkSelect">Preferred Milk:</label>
+            <select id="milkSelect">
+              <option value="whole">Whole Milk</option>
+              <option value="oat">Oat Milk</option>
+              <option value="almond">Almond Milk</option>
+            </select>
+          </div>
+
+          <button id="recommendBtn" class="btn-primary">Find My Drink</button>
+        </div>
+
+        <div id="recommendationResult" class="recommendation-result hidden"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hours & Location -->
+  <footer id="hours" class="footer">
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h3>Chez Mimi</h3>
+        <p>Herrengasse 12, 1010 Wien</p>
+        <p>hello@chez-mimi.at</p>
+      </div>
+      <div class="footer-col">
+        <h3>Opening Hours</h3>
+        <p>Mon – Fri: 08:00 AM – 07:00 PM</p>
+        <p>Sat – Sun: 09:00 AM – 06:00 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Chez Mimi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
